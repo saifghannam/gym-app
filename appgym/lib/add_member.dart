@@ -73,7 +73,19 @@ class _Add_mState extends State<Add_m> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Monthy Member...",
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(40),
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 0, 0, 0), width: 100)),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10, top: 10),
                   child: Row(
                     children: [
                       Text("Gender :      "),
@@ -97,6 +109,9 @@ class _Add_mState extends State<Add_m> {
                           }),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 20,
                 ),
                 Text(
                   "The praice is  0",
