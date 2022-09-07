@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     package="com.example.appgym">
    <application
         android:label="appgym"

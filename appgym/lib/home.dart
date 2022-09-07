@@ -1,4 +1,4 @@
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 // import 'package:gym/add_member.dart';
 // import 'package:gym/View.dart';
@@ -24,7 +24,6 @@ class _HomePageState extends State<HomePage> {
           alignment: Alignment.topCenter,
           width: double.infinity,
           height: double.infinity,
-          
           child: Wrap(children: [
             SizedBox(
               height: 20,
@@ -130,7 +129,9 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(100),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () async {
+                    await FirebaseAuth.instance.signOut();
+                  },
                   icon: Image(
                     image: AssetImage("images/Payment.png"),
                     width: 50,
